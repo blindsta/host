@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PARCIAL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!--boton para subir-->
+    <div class="go-top">
+        <span class="fas fa-angle-up"></span>
+    </div>
+
+    <!--menu de navegacion-->
+    <header id="header">
+     <nav class="menu">
+       <div class="logo-box">
+           <h1><a href="#">Parcial</a></h1>
+           <span class="btn-menu"><i class="fas fa-bars"></i></span>
+       </div>
+
+       <div class="list-container">
+           <ul class="lists">
+               <li><a href="#" class="activo">Universidad</a></li>
+               <li><a href="#">Asignatura</a></li>
+               <li><a href="#">Estudiante</a></li>
+               <li><a href="#">Ejercicio</a></li>
+           </ul>
+       </div>
+     </nav>
+    
+     <!-- Img Header -->
+     <div class="img-header">
+         <div class="welcome">
+             <h1>Bienvenido</h1>
+             <hr>
+             <p>Proyecto Lenguaje Programacion 3</p>
+             <button id="abajo">Descubrir</button>
+         </div>
+     </div>
+
+     <div class="skew-abajo"></div>
+  </header>
+
+<main>
+
+  <!-- Universidad -->
+  <section class="universidad">
+      <div class="info-universidad">
+          <h1>Universidad</h1>
+          <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/foK1vNrhRgU"></iframe></div>
+            <p>La Universidad Autónoma de Santo Domingo (UASD) es una universidad pública de la República Dominicana, y la única universidad estatal en el país. Fundada el 28 de octubre de 1538, siendo considerada como la primera universidad del continente Americano. Su sede central se encuentra en Santo Domingo, y tiene extensiones en 18 de 31 provincias.</p>
+            <p>Actualmente su maxima autoridad es la Doctora Emma Polanco.</p>
+     
+         <div class="about-gallery">
+             <img src="img/img-1.jpg" alt="">
+             <img src="img/img-3.jpg" alt="">
+             <img src="img/img-4.jpg" alt="">
+         </div>
+   </div>
+  </section>
+
+  <!-- Asignatura -->
+  <section class="asignatura">
+     <div class="skew-arriba"></div>
+
+      <div class="deg-background"></div>
+
+      <div class="ejeasignatura">
+          <div class="container-asignatura">
+              <div class="asignatura-title">
+                  <h2>Asignatura</h2>
+                  <hr>
+                  <p>La asignatura Lenguaje de programacion 3 es una asignatura de la licenciatura en informatica, es del quinto semestre de la carrera.</p>
+                  <hr>
+                  <p>Impartida por el Mtro. Angel Asencio, dentro del programa de clases aprendemos acerca de de la programacion web, abarcando HTML, CSS, JavaScript y Web Server.</p>
+              </div>
+
+              <div class="asignatura-img">
+                  <img src="img/theme-1.png" alt="">
+                  <img src="img/theme-2.jpg" alt="">
+                  <img src="img/theme-3.jpg" alt="">
+              </div>
+          </div>
+      </div>
+
+      <div class="skew-abajo"></div>
+  </section>
+
+  <!--Estudiante-->
+  <section class="estudiante">
+    <div class="estudiante-titulo">
+        <h2>Estudiante</h2>
+        <hr>
+    </div>
+
+    <div class="caja-estudiante">
+        <div class="tarjeta-estudiante">
+            <div class="tarjeta-img"><img src="img/perfil.jpeg" alt=""></div>
+            <div class="estudiante-texto">
+                <h4>David Aquino</h4>
+                <p>100249708</p>
+                <p>daaquinos@hotmail.com<p>
+            </div>
+        </div>
+  </section>
+
+</main>
+
+<!-- Ejercicio -->
+<div class="ejercicio" id="Ejercicio">
+    <div class="card-box">
+      <div class="card-body">
+        <h3 class="title">Ejercicio</h3>
+        <form class="calculadora">
+          <div class="tabla">
+            <table class="table1">
+              <tr>
+                <td>
+                  <input type="number" class="campo" id="first-n1" required/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="number" class="campo" id="first-n2" required />
+                </td>
+              </tr>
+            </table>
+
+            <!-- Operacion -->
+            <select name="" class="operacion" id="operaciones">
+              <option value="1">+</option>
+              <option value="2">-</option>
+              <option value="3">x</option>
+              <option value="4">/</option>
+            </select>
+
+            <table class="table2">
+              <tr>
+                <td>
+                  <input type="number" class="campo" id="second-n1" required/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="number" class="campo" id="second-n2" required/>
+                </td>
+              </tr>
+            </table>
+
+            <div class="equal">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+
+            <table class="table3">
+              <tr>
+                <td>
+                  <input type="number" id="results-n5" disabled/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="number" id="results-n6" disabled/>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="btn-box">
+            <button class="btn" id="btn-calcular" type="submit">
+              Calcular
+            </button>
+            <button class="btn" id="limpiar" type="reset">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Scripts -->
+<script src="https://kit.fontawesome.com/35db202371.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/app.js"></script>
+    
+</body>
+</html>
