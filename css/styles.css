@@ -1,0 +1,589 @@
+:root{
+   --red:#ff2e63;
+   --blue:#08d9d6;
+   --black:#252a34;
+   --white:#eaeaea;
+}
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   background: #fff;
+   overflow-x: hidden;
+   font-family: 'Raleway', sans-serif;
+}
+
+/** Ir arriba **/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border:2px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.go-top > span:hover{
+    color: var(--white);
+}
+.go-top:hover{
+    background: var(--red);
+    color:#fff;
+    border:2px solid var(--white);
+}
+.go-top > span{
+    font-size: 30px;
+    color:var(--black);
+}
+
+/** Efecto Skew **/
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index:10;
+}
+
+/** Menu de Navegacion **/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container ul{
+    display: flex;
+}
+.menu .list-container ul li{
+    list-style: none;
+}
+.menu .list-container ul li a{
+    text-decoration: none;
+    margin:0px 10px;
+    padding:8px;
+    color:var(--black);
+    border-radius: 24px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.menu .list-container ul li a.activo{
+    background:var(--red);
+    color: #ffff;
+}
+.menu .list-container ul li a:hover{
+    background:var(--red);
+    color: #ffff;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/** Menu de Navegacion **/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border:none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background:var(--red);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome > button:hover{
+    background: var(--blue);
+}
+
+/**Universidad**/
+.universidad{
+    width: 100%;
+    margin-top: 120px;
+}
+.universidad .info-universidad{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+.universidad .info-universidad h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.universidad .info-universidad p{
+    text-align: center;
+    font-size: 17px;
+    color:var(--black);
+    line-height: 35px;
+    margin:10px 0px;
+}
+.universidad .info-universidad .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:50px 10px;
+}
+.universidad .info-universidad .about-gallery img{
+    width:calc(33.333% - 10px);
+    height: 300px;
+    margin:10px 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.universidad .info-universidad .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.universidad .info-universidad .about-more button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: var(--red);
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.universidad .info-universidad .about-more button:hover{
+    background: var(--blue);
+}
+/*Asignatura*/
+
+.asignatura{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/img-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px; 
+}
+.asignatura .deg-background{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.asignatura .ejeasignatura{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.asignatura .container-asignatura{
+    width: 100%;
+    margin:auto;
+    padding-top: 100px;
+}
+.asignatura .container-asignatura .asignatura-title{
+    border:2px solid #fff;
+    padding:10px;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+}
+.asignatura .container-asignatura .asignatura-title h2{
+    font-size: 40px;
+    color:#fff;
+    font-weight: normal;
+}
+.asignatura .container-asignatura .asignatura-title hr{
+    background: #ffff;
+    width: 50%;
+    height: 3px;
+    margin:10px auto;
+}
+.asignatura .container-asignatura .asignatura-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px; 
+}
+.asignatura .container-asignatura .asignatura-img img{
+    width: calc(30% - 10px);
+    margin:20px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/** Estudiante**/
+.estudiante{
+    width: 100%;
+    margin-top: 120px;
+}
+.estudiante .estudiante-titulo{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.estudiante .estudiante-titulo h2{
+    font-size:50px;
+    font-weight: normal;
+    color:var(--black);
+    margin-bottom: 10px;
+}
+.estudiante .estudiante-titulo hr{
+    width:60%;
+    height: 2px;
+    margin:auto;
+    background: var(--black);
+}
+.estudiante .caja-estudiante{
+    width: 90%;
+    margin:80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante{
+    width: 45%;
+    margin:20px;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .tarjeta-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .tarjeta-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto{
+    border:2px solid var(--red);
+    padding:20px;
+    border-radius: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto h4{
+    font-size: 30px;
+    font-weight: 400;
+    color:var(--red);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color:var(--black);
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto:hover{
+    border:2px solid var(--blue);
+}
+.estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto:hover h4{
+    color:var(--blue);
+}
+
+/** ejercicio **/
+.ejercicio {
+    width: 100%;
+    margin-top: 120px;
+    background: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ejercicio .card-body {
+    height: 400px;
+    width: 700px;
+    background: #0b023d;
+    display: grid;
+    grid-template-rows: 60px auto auto;
+    border-radius: 10px;
+  }
+  .ejercicio .card-body .title {
+    padding: 20px;
+    width: 100%;
+    background: rgb(2, 191, 248);
+    letter-spacing: 0.1em;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    grid-row: 1;
+  }
+  .ejercicio .card-body .calculadora {
+    grid-row: 2;
+    margin: auto 5em;
+  }
+  .ejercicio .card-body .tabla {
+    display: flex;
+    justify-content: space-around;
+  }
+  .operacion {
+    margin: 0 10px;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+  }
+  input[type="number"] {
+    height: 2em;
+    width: 11em;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    -moz-appearance: textfield;
+    border: none;
+  }
+  
+  input[type="number"]:focus {
+    border: 1px solid rgba(30, 143, 255, 0.726);
+  }
+  .btn-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn {
+    padding: 9px 25px;
+    margin-top: 20px;
+    width: 15rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+  }
+  .btn:hover{
+    background-color: rgba(205, 209, 211, 0.767);
+  }
+  .line {
+    width: 20px;
+    height: 3px;
+    background: #ffffff;
+    margin: 5px;
+    transform: translate(0, 1.2em);
+  }
+
+/** Media Query **/
+@media only screen and (max-width:900px){
+   .btn-menu > .fa-bars{
+       display: block;
+       position: absolute;
+       right: 30px;
+       top: 20px;
+       font-size: 28px;
+       color:var(--black);
+       transition: 0.5s;
+       cursor: pointer;
+   }
+   .btn-menu > .fa-bars:hover{
+    color:var(--red);
+   }
+   .btn-menu > .fa-times{
+       color:var(--red);
+   }
+   .menu .list-container{
+       position:fixed;
+       top: 60px;
+       left: -100%;
+       background: #ffff;
+       width: 100%;
+       height: calc(100vh - 60px);
+   }
+   .menu .list-container .lists{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       border-top:4px solid var(--red);
+   }
+   .menu .list-container .lists li{
+       width: 90%;
+       border-bottom: 2px solid var(--black);
+       display: flex;
+       justify-content: center;
+   }
+   .menu .list-container .lists li a{
+       font-size:20px;
+       text-align: center;
+       padding:12px 0px;
+   }
+   .menu .list-container .lists li a.activo{
+       background: none;
+       color:var(--red);
+   }
+   .menu .list-container .lists li a:hover{
+    background: none;
+    color:var(--red);
+   }
+
+}
+
+@media only screen and (max-width:773px) {
+   
+    /** IMG header **/
+    .img-header .welcome h1{
+        font-size:40px;
+    }
+    .img-header .welcome > button{
+        width: 130px;
+        font-size: 20px;
+    }
+
+    /** Acerca de Nosotros **/
+    .universidad .info-universidad .about-gallery{
+        flex-direction: column;
+    }
+    .universidad .info-universidad .about-gallery img{
+        width: 100%;
+    }
+
+    /** Nuestros Proyectos **/
+    .asignatura .container-asignatura .asignatura-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width:590px) {
+   /** Img Header **/
+   .img-header .welcome h1{
+       font-size: 30px;
+   }
+   .img-header .welcome hr{
+       width: 100px;
+   }
+   .img-header .welcome p{
+       font-size: 17px;
+   }
+   .img-header .welcome > button{
+       width: 100px;
+       font-size:17px;
+   }
+
+}
+
+@media only screen and (max-width:890px) {
+    /** Estudiante **/
+    .estudiante .caja-estudiante .tarjeta-estudiante .tarjeta-img img{
+        width: 200px;
+        height: 200px;
+    }
+    .estudiante .caja-estudiante .tarjeta-estudiante{
+        width: 100%;
+    }
+    .estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto h4{
+        font-size: 25px;
+    }
+    .estudiante .caja-estudiante .tarjeta-estudiante .estudiante-texto p{
+        font-size: 17px;
+        line-height: 35px;
+    }
+  
+  }
+}
